@@ -19,7 +19,7 @@ with Diagram("Project Structure", filename="structure", strict=True):
         react >> spring
         spring >> react
 
-        brower >> Edge(label="User Interface") >> react
+        user >> Edge(label="User Interface") >> react
 
     with Cluster("Extention's Service"):
         go = GoLang(label="Gin")
